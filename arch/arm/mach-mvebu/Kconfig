@@ -100,6 +100,19 @@ config MACH_SOLIDRUN_CUBOX
 
 comment "Kirkwood based boards"
 
+config MENU_DLINK_DNSKW
+	bool "D-Link NAS"
+
+config MACH_DLINK_DNS325
+	bool "DNS-325"
+	depends on MENU_DLINK_DNSKW
+	select ARCH_KIRKWOOD
+
+config MACH_DLINK_DNS320
+	bool "DNS-320 rev A"
+	depends on MENU_DLINK_DNSKW
+	select ARCH_KIRKWOOD
+
 config MACH_GLOBALSCALE_GURUPLUG
 	bool "Guruplug"
 	select ARCH_KIRKWOOD

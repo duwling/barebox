@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#include <arm/kirkwood-dns320.dts>
+
+/ {
+	choosen {
+		environment {
+			compatible = "barebox,environment";
+			device-path = &bareboxenv;
+		};
+	};
+};
+
+&nand {
+	nand-ecc-algo = "hamming";
+
+	bootloader: partition@0 {
+		label = "bl";
+		reg = <0 0x80000>;
+	};
+	bareboxenv: partition@e0000 {
+		label = "env";
+		reg = <0xe0000 0x20000>;
+	};
+};

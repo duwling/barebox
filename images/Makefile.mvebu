@@ -103,6 +103,22 @@ image-$(CONFIG_MACH_SOLIDRUN_CUBOX) += barebox-solidrun-cubox.img
 image-$(CONFIG_MACH_SOLIDRUN_CUBOX) += barebox-solidrun-cubox-2nd.img
 
 # ----------------------- Kirkwood based boards ---------------------------
+DLINK_DNS325_KWBOPTS = ${KWBOPTS} -i $(board)/dlink-dnskw/kwbimage.dns325.cfg
+OPTS_start_dlink_dns325.pblb.kwbimg = $(DLINK_DNS325_KWBOPTS)
+FILE_barebox-dlink-dns325.img = start_dlink_dns325.pblb.kwbimg
+FILE_barebox-dlink-dns325-2nd.img = start_dlink_dns325.pblb
+pblb-$(CONFIG_MACH_DLINK_DNS325) += start_dlink_dns325
+image-$(CONFIG_MACH_DLINK_DNS325) += barebox-dlink-dns325.img
+image-$(CONFIG_MACH_DLINK_DNS325) += barebox-dlink-dns325-2nd.img
+
+DLINK_DNS320_KWBOPTS = ${KWBOPTS} -i $(board)/dlink-dnskw/kwbimage.dns320.cfg
+OPTS_start_dlink_dns320.pblb.kwbimg = $(DLINK_DNS320_KWBOPTS)
+FILE_barebox-dlink-dns320.img = start_dlink_dns320.pblb.kwbimg
+FILE_barebox-dlink-dns320-2nd.img = start_dlink_dns320.pblb
+pblb-$(CONFIG_MACH_DLINK_DNS320) += start_dlink_dns320
+image-$(CONFIG_MACH_DLINK_DNS320) += barebox-dlink-dns320.img
+image-$(CONFIG_MACH_DLINK_DNS320) += barebox-dlink-dns320-2nd.img
+
 GLOBALSCALE_GURUPLUG_KWBOPTS = ${KWBOPTS} -i $(board)/globalscale-guruplug/kwbimage.cfg
 OPTS_start_globalscale_guruplug.pblb.kwbimg = $(GLOBALSCALE_GURUPLUG_KWBOPTS)
 FILE_barebox-globalscale-guruplug.img = start_globalscale_guruplug.pblb.kwbimg
