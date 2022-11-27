@@ -8,7 +8,9 @@
 static int dnskw_devices_init(void)
 {
 	if (!of_machine_is_compatible("dlink,dns-325") &&
-	    !of_machine_is_compatible("dlink,dns-320"))
+	    !of_machine_is_compatible("dlink,dns-320") &&
+	    !of_machine_is_compatible("dlink,dns-320l") &&
+	    !of_machine_is_compatible("dlink,dns-320-b"))
 		return 0;
 
 	mvebu_bbu_flash_register_handler("flash", "/dev/orion_nand0", 0, true);

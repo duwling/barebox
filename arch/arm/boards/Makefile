@@ -199,3 +199,5 @@ obj-$(CONFIG_MACH_PINE64_QUARTZ64)		+= pine64-quartz64/
 obj-$(CONFIG_MACH_RADXA_ROCK3)			+= radxa-rock3/
 obj-$(CONFIG_MACH_DLINK_DNS325)			+= dlink-dnskw/
 obj-$(CONFIG_MACH_DLINK_DNS320)			+= dlink-dnskw/
+obj-$(CONFIG_MACH_DLINK_DNS320L)		+= dlink-dnskw/
+obj-$(CONFIG_MACH_DLINK_DNS320B)		+= dlink-dnskw/

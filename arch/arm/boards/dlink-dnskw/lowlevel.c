@@ -21,3 +21,5 @@
 	}
 kw_entry_(dns325);
 kw_entry_(dns320);
+kw_entry_(dns320l);
+kw_entry_(dns320b);

@@ -113,6 +113,16 @@ config MACH_DLINK_DNS320
 	depends on MENU_DLINK_DNSKW
 	select ARCH_KIRKWOOD
 
+config MACH_DLINK_DNS320L
+	bool "DNS-320L"
+	depends on MENU_DLINK_DNSKW
+	select ARCH_KIRKWOOD
+
+config MACH_DLINK_DNS320B
+	bool "DNS-320 rev B"
+	depends on MENU_DLINK_DNSKW
+	select ARCH_KIRKWOOD
+
 config MACH_GLOBALSCALE_GURUPLUG
 	bool "Guruplug"
 	select ARCH_KIRKWOOD

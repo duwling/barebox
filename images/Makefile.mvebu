@@ -119,6 +119,22 @@ pblb-$(CONFIG_MACH_DLINK_DNS320) += start_dlink_dns320
 image-$(CONFIG_MACH_DLINK_DNS320) += barebox-dlink-dns320.img
 image-$(CONFIG_MACH_DLINK_DNS320) += barebox-dlink-dns320-2nd.img
 
+DLINK_DNS320L_KWBOPTS = ${KWBOPTS} -i $(board)/dlink-dnskw/kwbimage.dns320l.cfg
+OPTS_start_dlink_dns320l.pblb.kwbimg = $(DLINK_DNS320L_KWBOPTS)
+FILE_barebox-dlink-dns320l.img = start_dlink_dns320l.pblb.kwbimg
+FILE_barebox-dlink-dns320l-2nd.img = start_dlink_dns320l.pblb
+pblb-$(CONFIG_MACH_DLINK_DNS320L) += start_dlink_dns320l
+image-$(CONFIG_MACH_DLINK_DNS320L) += barebox-dlink-dns320l.img
+image-$(CONFIG_MACH_DLINK_DNS320L) += barebox-dlink-dns320l-2nd.img
+
+DLINK_DNS320B_KWBOPTS = ${KWBOPTS} -i $(board)/dlink-dnskw/kwbimage.dns320b.cfg
+OPTS_start_dlink_dns320b.pblb.kwbimg = $(DLINK_DNS320B_KWBOPTS)
+FILE_barebox-dlink-dns320b.img = start_dlink_dns320b.pblb.kwbimg
+FILE_barebox-dlink-dns320b-2nd.img = start_dlink_dns320b.pblb
+pblb-$(CONFIG_MACH_DLINK_DNS320B) += start_dlink_dns320b
+image-$(CONFIG_MACH_DLINK_DNS320B) += barebox-dlink-dns320b.img
+image-$(CONFIG_MACH_DLINK_DNS320B) += barebox-dlink-dns320b-2nd.img
+
 GLOBALSCALE_GURUPLUG_KWBOPTS = ${KWBOPTS} -i $(board)/globalscale-guruplug/kwbimage.cfg
 OPTS_start_globalscale_guruplug.pblb.kwbimg = $(GLOBALSCALE_GURUPLUG_KWBOPTS)
 FILE_barebox-globalscale-guruplug.img = start_globalscale_guruplug.pblb.kwbimg

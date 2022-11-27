@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#include "kirkwood-dns320l.dts"
+
+/ {
+	model = "D-Link DNS-320-rev-Bx NAS";
+	compatible = "dlink,dns-320-b", "marvell,kirkwood-88f6702", "marvell,kirkwood";
+
+	memory {
+		reg = <0 0x8000000>;
+	};
+};
