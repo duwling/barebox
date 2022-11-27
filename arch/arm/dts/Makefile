@@ -252,6 +252,10 @@ lwl-$(CONFIG_MACH_TQMLS1046A) += fsl-ls1046a-tqmls1046a-mbls10xxa.dtb.o
 lwl-$(CONFIG_MACH_LS1021AIOT) += fsl-ls1021a-iot.dtb.o
 lwl-$(CONFIG_MACH_ZEDBOARD) += zynq-zed.dtb.o
 lwl-$(CONFIG_MACH_MNT_REFORM) += imx8mq-mnt-reform2.dtb.o
+lwl-$(CONFIG_MACH_DLINK_DNS320) += kirkwood-dns320.dtb.o
+lwl-$(CONFIG_MACH_DLINK_DNS320B) += kirkwood-dns320b.dtb.o
+lwl-$(CONFIG_MACH_DLINK_DNS320L) += kirkwood-dns320l.dtb.o
+lwl-$(CONFIG_MACH_DLINK_DNS325) += kirkwood-dns325.dtb.o
 lwl-$(CONFIG_MACH_VARISCITE_DT8MCUSTOMBOARD_IMX8MP) += imx8mp-var-dart-dt8mcustomboard.dtb.o
 lwl-$(CONFIG_MACH_TQMA93XX) += imx93-tqma9352-mba93xxca.dtb.o \
 			       imx93-tqma9352-mba93xxla.dtb.o
