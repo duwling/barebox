@@ -211,6 +211,7 @@ again:
 static const struct of_device_id mv_sata_dt_ids[] = {
 	{
 		.compatible = "marvell,armada-370-sata",
+		.compatible = "marvell,orion-sata",
 	}, {
 		/* sentinel */
 	}
